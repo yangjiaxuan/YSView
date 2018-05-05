@@ -7,22 +7,38 @@
 //
 
 #import "ViewController.h"
+#import "UIView+YSDrag.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController{
+    UIView *view;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    view = [[UIView alloc] initWithFrame:CGRectMake(0, 100, 50, 50)];
+    view.backgroundColor = [UIColor blueColor];
+    view.layer.cornerRadius = 5;
+    [self.view addSubview:view];
+    
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction)];
+    [view addGestureRecognizer:pan];
+    
+    [view ys_dragAdsorb:NO];
 }
 
+- (void)panAction{
+    NSLog(@"=== pan ===");
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)tap:(UITapGestureRecognizer *)sender{
+    if (sender.state == UIGestureRecognizerStateBegan) {
+        NSLog(@"=== tap B ===");
+    }
 }
 
 
