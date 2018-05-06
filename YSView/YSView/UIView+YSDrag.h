@@ -13,7 +13,9 @@
 /** 是否有吸附效果 */
 @property(assign, nonatomic, readonly)BOOL isAdsorb;
 
-/** 准备拖动 */
+/** 准备拖动
+ * isAdsorb:是否有吸附效果
+ */
 - (void)ys_dragAdsorb:(BOOL)isAdsorb;
 /** 禁止拖动 */
 - (void)ys_noDrag;

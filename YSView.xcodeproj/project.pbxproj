@@ -16,6 +16,7 @@
 		453F1C62209DED280094410E /* YSViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 453F1C61209DED280094410E /* YSViewTests.m */; };
 		453F1C6D209DED280094410E /* YSViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 453F1C6C209DED280094410E /* YSViewUITests.m */; };
 		453F1C7D209DED8F0094410E /* UIView+YSDrag.m in Sources */ = {isa = PBXBuildFile; fileRef = 453F1C7C209DED8F0094410E /* UIView+YSDrag.m */; };
+		453F1C80209E2D5E0094410E /* UIView+YSDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 453F1C7F209E2D5E0094410E /* UIView+YSDebug.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		453F1C6E209DED280094410E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		453F1C7B209DED8F0094410E /* UIView+YSDrag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YSDrag.h"; sourceTree = "<group>"; };
 		453F1C7C209DED8F0094410E /* UIView+YSDrag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YSDrag.m"; sourceTree = "<group>"; };
+		453F1C7E209E2D5E0094410E /* UIView+YSDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YSDebug.h"; sourceTree = "<group>"; };
+		453F1C7F209E2D5E0094410E /* UIView+YSDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YSDebug.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 			children = (
 				453F1C7B209DED8F0094410E /* UIView+YSDrag.h */,
 				453F1C7C209DED8F0094410E /* UIView+YSDrag.m */,
+				453F1C7E209E2D5E0094410E /* UIView+YSDebug.h */,
+				453F1C7F209E2D5E0094410E /* UIView+YSDebug.m */,
 			);
 			path = YSView;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				453F1C4D209DED280094410E /* ViewController.m in Sources */,
 				453F1C58209DED280094410E /* main.m in Sources */,
 				453F1C4A209DED280094410E /* AppDelegate.m in Sources */,
+				453F1C80209E2D5E0094410E /* UIView+YSDebug.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

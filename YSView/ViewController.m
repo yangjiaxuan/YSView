@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIView+YSDrag.h"
+#import "UIView+YSDebug.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIView *yellowView = [[UIView alloc] initWithFrame:CGRectMake(200, 200, 100, 100)];
+    yellowView.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:yellowView];
+    
+    [UIView ysDebug];
     
     view = [[UIView alloc] initWithFrame:CGRectMake(0, 100, 50, 50)];
     view.backgroundColor = [UIColor blueColor];
